@@ -1,0 +1,9 @@
+# Add this to your deployment.yml file
+# Only the api key and org are in use.. The others might be useful someday.. 
+meraki:
+  api_key: 'api_key_here'
+  org_id: 'org_id_here'
+  discover: true
+  macsuck: true
+  arpnip: true
+  clients: true
