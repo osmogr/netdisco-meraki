@@ -1,5 +1,12 @@
 # Add this to your deployment.yml file
-# Only the api key and org are in use.. The others might be useful someday.. 
+# Only the api key and org_id are needed for meraki section. 
+# I use docker, other platforms might need adjustment (pending test)
+
+# Confirm this exists (near the top?)
+site_local_files: true
+# Add this line
+extra_worker_plugins: ['X::MerakiSync']
+# Add all this and update api_key and org_id
 meraki:
   api_key: 'api_key_here'
   org_id: 'org_id_here'
